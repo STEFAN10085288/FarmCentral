@@ -1,0 +1,33 @@
+﻿
+<h4>Search product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ShowSearchResults">
+            <div class="form-group">
+                <label for="SearchFarmer"class="control-label">Farmer</label>
+                <input name="SearchFarmer" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="SearchType" class="control-label">Product Type</label>
+                <input name="SearchType" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="SearchStartDate" class="control-label">Start Date</label>
+                <input name="SearchStartDate" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="SearchEndDate" class="control-label">End Date</label>
+                <input name="SearchEndDate" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
